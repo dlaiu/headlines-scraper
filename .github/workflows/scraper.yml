@@ -14,8 +14,9 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '*/5 * * * *'
 jobs:
+  #below name doesn't matter 
   daily:
     runs-on: ubuntu-latest
     steps:
